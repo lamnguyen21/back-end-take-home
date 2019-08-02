@@ -15,6 +15,7 @@ py==1.8.0
 pyparsing==2.4.2
 pytest==5.0.1
 six==1.12.0
+uWSGI==2.0.18
 wcwidth==0.1.7
 Werkzeug==0.15.5
 zipp==0.5.2

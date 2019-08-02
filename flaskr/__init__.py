@@ -9,7 +9,7 @@ from .errors import InvalidDestinationError
 def create_app(test_config):
     app = Flask(__name__, instance_relative_config=True)
     if test_config is None:
-        app.config.from_pyfile(app.instance_path + "/config.py")
+        app.config.from_envvar('APP_CONFIG')
     else:
         app.config.update(test_config)
 
